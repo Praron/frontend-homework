@@ -4,7 +4,5 @@ const inverse = (array, n = 0) => {
     if (n >= 0) {
         return array.slice(0, n).concat(array.slice(n).reverse());
     }
-    else {
-        return array.slice(0, n).reverse().concat(array.slice(n));
-    }
+    return array.slice(0, n).reverse().concat(array.slice(n));
 }
